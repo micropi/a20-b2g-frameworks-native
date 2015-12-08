@@ -186,12 +186,12 @@ public:
     // connected to the specified client API.
     virtual status_t disconnect(int api) = 0;
 
-	virtual int      setParameter(uint32_t cmd,uint32_t value) = 0;
-    virtual uint32_t getParameter(uint32_t cmd) = 0;
-    virtual status_t setCrop(const Rect& reg) = 0;
-    virtual status_t setCurrentTransform(uint32_t transform) = 0;
-    virtual  status_t setCurrentScalingMode(int scalingMode) = 0;
-    virtual status_t setTimestamp(int64_t timestamp) = 0;
+    int      setParameter(uint32_t cmd,uint32_t value){return 0;}
+    uint32_t getParameter(uint32_t cmd){return 0;}
+    status_t setCrop(const Rect& reg){return 0;}
+    status_t setCurrentTransform(uint32_t transform){return 0;}
+    status_t setCurrentScalingMode(int scalingMode){return 0;}
+    status_t setTimestamp(int64_t timestamp){return 0;}
 };
 
 // ----------------------------------------------------------------------------
